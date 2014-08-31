@@ -1,4 +1,4 @@
-validate.io-strict-date
+Date Object
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -19,15 +19,17 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 To use the module,
 
 ``` javascript
-var lib = require( 'validate.io-strict-date' );
+var isDate = require( 'validate.io-strict-date' );
+
+console.log( isDate( new Date() ) );
+// Returns true
+
+console.log( isDate( Date.now() ) );
+// Returns false
 ```
 
 
 ## Examples
-
-``` javascript
-var lib = require( 'validate.io-strict-date' );
-```
 
 To run the example code from the top-level application directory,
 
