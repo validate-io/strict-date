@@ -1,7 +1,9 @@
+'use strict';
+
 var isDate = require( './../lib' );
 
 console.log( isDate( new Date() ) );
-// Returns true
+// returns true
 
 console.log( isDate( Date.now() ) );
-// Returns false
+// returns false

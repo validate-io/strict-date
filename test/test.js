@@ -1,3 +1,5 @@
+/* global require, describe, it */
+'use strict';
 
 // MODULES //
 
@@ -17,7 +19,6 @@ var expect = chai.expect,
 // TESTS //
 
 describe( 'validate.io-strict-date', function tests() {
-	'use strict';
 
 	it( 'should export a function', function test() {
 		expect( isDate ).to.be.a( 'function' );
@@ -29,16 +30,16 @@ describe( 'validate.io-strict-date', function tests() {
 
 	it( 'should negatively validate', function test() {
 		var values = [
-				5,
-				[],
-				'5',
-				function(){},
-				null,
-				NaN,
-				{},
-				undefined,
-				Date.now()
-			];
+			5,
+			[],
+			'5',
+			function(){},
+			null,
+			NaN,
+			{},
+			undefined,
+			Date.now()
+		];
 
 		for ( var i = 0; i < values.length; i++ ) {
 			assert.ok( !isDate( values[i] ) );
