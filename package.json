@@ -27,7 +27,13 @@
     "validate",
     "validation",
     "validator",
-    "date"
+    "date",
+    "valid",
+    "is",
+    "type",
+    "check",
+    "isdate",
+    "instanceof"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/strict-date/issues"
